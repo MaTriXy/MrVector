@@ -2,7 +2,7 @@ Mr. Vector
 ==========
 ![Mr. Vector](http://i.imgur.com/ucFr5T7.png)
 
-AKA VectorDrawableCompat: A 14+ backport of [VectorDrawable](https://developer.android.com/reference/android/graphics/drawable/VectorDrawable.html).
+AKA VectorDrawableCompat: A 7+ backport of [VectorDrawable](https://developer.android.com/reference/android/graphics/drawable/VectorDrawable.html).
 
 ### Demo
 
@@ -12,10 +12,10 @@ AKA VectorDrawableCompat: A 14+ backport of [VectorDrawable](https://developer.a
 
 ### Usage
 
-See demo, at this point latest version is `0.1.0`
+See demo, at this point latest version looks like
 
 ```groovy
-compile 'com.telly:mrvector:(insert latest version)'
+compile 'com.telly:mrvector:0.2.0'
 ```
 
 ### Basic inflate
@@ -25,6 +25,9 @@ Drawable drawable = MrVector.inflate(getResources(), R.drawable.vector_android);
 
 Unfortunately due some inflate weirdness (able to read some correctly but not others) for now (will fix promise) you'll have to duplicate (sucks I know) all your `android:` attributes, in example:
 
+**Note**: you must put `auto` attributes before `android` attributes ([See #5](https://github.com/telly/MrVector/issues/5))
+
+**Furthermore**: you can use online [convertor](http://ozodrukh.github.io/Svg2MrVector/) svg to VectorDrawable + MrVector scheme support
 
 ```xml
 <vector xmlns:android="http://schemas.android.com/apk/res/android"
