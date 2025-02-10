@@ -1,3 +1,6 @@
+###`@Deprecated`
+Unfortunatenly this library is no longer maintained, we encourage you to use [first party VectorDrawableCompat coming soon to support library](https://android.googlesource.com/platform/frameworks/support/+/master/v7/vectordrawable/).
+
 Mr. Vector
 ==========
 ![Mr. Vector](http://i.imgur.com/ucFr5T7.png)
@@ -109,6 +112,10 @@ On the long run, it would be nice to see (but no promises):
 - [ ] Per node animation.
 - [ ] Additional SVG support (e.g. using [svg-android](https://code.google.com/p/svg-android/) or [svgandroid](https://code.google.com/p/androidsvg/)).
 - [ ] SVG animation support.
+
+###Applications using Mr.Vector:
+
+[WatchMe](https://github.com/ozodrukh/Mover)
 
 ### License & About
 
